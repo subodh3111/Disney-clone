@@ -1,0 +1,286 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #0c111b;
+    position: relative;
+  /*  font-family: roboto, sans-serif;*/
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 0 4%;
+    background-color: #0c111b;
+    z-index: 9;
+    display: flex;
+}
+.brand-logo{
+    height: 90px;
+}
+.nav-links{
+         margin-top: 20px;
+     display:flex;
+     list-style:none;
+}
+.nav-item a{
+    margin-left: 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff ;
+    opacity: 0.9;
+   
+}
+.right-container{
+    display: block;
+    margin-left: auto;
+
+}
+.search-box{
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #ffffff;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 1s;
+    margin-top: 12px;
+}
+.search-box:focus{
+    border-bottom: 3px solid #ffffff;
+    height: 32px;
+    transition: .4s;
+}
+.sub-btn{
+  background: #1f80e0;
+  height: 40px;
+  padding: 0 20px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 550px;
+  font-size: 17px;
+  margin: 0 10px;
+
+}
+
+.login-link{
+   color: #fff;
+   opacity: 0.9;
+   text-transform: uppercase;
+   font-size: 15px;
+   font-weight: 300px;
+   text-decoration: none;
+   margin-right: 20px;
+   margin-left: 20px;
+}
+.carousel-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin-top:60px ;
+
+}
+.carousel{
+    display: flex;
+    width: 92%;
+    position: relative;
+    margin: auto;
+
+}
+.slider{
+    flex: 0 0 auto;
+    margin-top: 30px;
+    position: relative;
+    background: rgba(68, 9, 9, 0.5);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition:1s ;
+    overflow: hidden;
+}
+.slider img{
+    width: 70%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;}
+    .slide-content{
+        position: absolute;
+        width: 37%;
+        height: 100%;
+        z-index: 2;
+        background:linear-gradient(to right,#030b17 30%, #3a1305b0);
+        color:#fff ;
+    }
+    .movie-title{
+        padding-left: 50px;
+        text-transform: capitalize;
+        margin-top: 30px;
+    }
+    .movie-des{
+        width: 400px;
+        line-height: 30px;
+        padding-left: 50px;
+        margin-top: 30px;
+        opacity: 0.7;
+    }
+ 
+    .video-card-container{
+         position: relative;
+         width: 92%;
+         margin: auto;
+         margin-top: 20px;
+         height: 10vw;;
+         display: flex;
+         margin-bottom: 20px;
+         justify-content: space-between;
+    }
+    .video-card{
+        position: relative;
+        min-width: calc(100%/5-10px);
+        width: calc(100%/5-10px);
+        height: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #030b17;
+    }
+    .video-card-image, .card-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    }
+    .card-video{
+        position: absolute;
+    }
+    /* .video-card:hover .video-card-image{
+        display: none;
+    } */
+    .title{
+       color: #fff; 
+       margin-left: 4%;
+
+    }
+   .movies-list{
+    width: 100%;
+    height: 290px;
+    position: relative;
+    margin: 10px 0 20px;
+    
+   }
+   .card-container{
+    position: relative;
+    width: 92%;
+    padding-left: 10px;
+    height: 220px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    justify-content: space-evenly;
+
+   }
+   .card-container::-webkit-scrollbar{
+    display: none;
+
+   }
+   .card{
+    position: relative;
+    min-width: 150px;
+    width: 170px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: 0.5s;
+    background: #0c111b;
+   }
+   .card-img{
+       width: 98%;
+       height: 98%;
+       object-fit: cover;
+       margin-top: 10px;
+       
+   }
+   .card:hover{
+    transform: scale(1.2);
+
+   }
+   .card:hover .card-body{
+    opacity: 1;
+   }
+   
+   .card-body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom,rgba(4,8,15,0),#192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+   }
+.name{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 30%;
+}
+.des{
+    color: white;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 300;
+    font-size:15px;
+
+}
+.watchlist-btn{
+
+    position: absolute;
+    width: 90%;
+    height: 43px;
+    border: none;
+    text-align: auto;
+    font-size: 16px;
+    cursor: pointer;
+   
+    border-radius: 5px;
+    opacity: 0.8;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.watchlist-btn::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    height: 35px;
+    width: 35px;
+   /* background-image: url('disney-plus-clone-master/disney-plus-clone-master/images/add.png');
+    background-size: cover;*/
+
+}
+.watchlist-btn:hover{
+ color: #fff;
+ background:rgba(255,255,255,0.5);
+
+}
